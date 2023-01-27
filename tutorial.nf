@@ -1,3 +1,5 @@
+#!/home/tliang19/.local/bin nextflow
+
 // This is a variable
 params.str = "Hello World"
 

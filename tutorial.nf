@@ -1,5 +1,7 @@
+// This is a variable
 params.str = "Hello World"
 
+// This is a process that outputs some stuff
 process splitLetters {
     output:
         path "chunk_*"
@@ -9,6 +11,7 @@ process splitLetters {
     """
 }
 
+// This is a process that splits letters and convert to upper
 process convertToUpper {
     input:
         path x

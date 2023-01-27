@@ -1,1 +1,10 @@
 # Here could have included packages for conda
+name: custom-conda-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - r-dplyr
+  - openjdk=11.0.18

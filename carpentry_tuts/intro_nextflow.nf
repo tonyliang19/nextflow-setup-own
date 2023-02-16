@@ -19,7 +19,7 @@ nextflow.enable.dsl=2
 */
 
 // note `input` is the parameter name
-params.input = "data/reads_1.fq.gz"
+params.input = "data/ref1_1.fq.gz"
 
 // default workflow name
 workflow {

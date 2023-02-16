@@ -6,7 +6,7 @@
 // otherwise have to use more process
 
 // Define variables and params to use later
-raw_data_dir = "data/"
+raw_data_dir = "raw_data/"
 
 
 // Should have a common pre-processor

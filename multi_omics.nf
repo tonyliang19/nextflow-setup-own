@@ -31,25 +31,18 @@ process preProcessor {
 }
 
 process runMethod1 {
-    input:
-        path(raw_data_dir)
-        // ...
-        // ...
-        // add more items here?
-    
-    output:
-        path("${out_dir}")
+
+    debug true
 
     script:
-        """
-        #! /usr/bin/env Rscript/Python/ or some other language?
+	"""
+	#! /usr/bin/env Rscript
+	library(mixOmics)
+	data(breast.TCGA)
+	X1 <- breast.TCGA$data.train$mirna[1:5]
+	print(X1)
 
-        pandas.read_csv(raw_data_dir) // dplyr::read_csv(raw_data_dir)
-        ...
-        
-        # Do something here
-
-        """
+	"""
 
 }
 
@@ -72,6 +65,13 @@ process runMethod2 {
         # Do something here
 
         """
+}
+
+workflow {
+
+	runMethod1()
+
+
 }
 
 // ... add more processes if needed

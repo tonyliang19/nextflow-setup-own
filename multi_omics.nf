@@ -38,10 +38,14 @@ process runMethod1 {
 	"""
 	#! /usr/bin/env Rscript
 	library(mixOmics)
-	data(breast.TCGA)
-	X1 <- breast.TCGA$data.train$mirna[1:5]
-	print(X1)
-
+	# data(breast.TCGA)
+	# X1 <- breast.TCGA$data.train$mirna
+	# X2 <- breast.TCGA$data.train$mrna
+	# X3 <- breast.TCGA$data.train$protein
+	# X <- list(mirna = X1, mrna = X2, protein = X3)
+	# Y <- list(mirna = X1, mrna = X2, protein = X3)
+	# print(X1)
+	print("Try")   
 	"""
 
 }
